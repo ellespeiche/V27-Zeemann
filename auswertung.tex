@@ -1,6 +1,9 @@
 \section{Vorbereitende Aufgaben}
-\subsection{Termschemata der Spekrallinien}
-Die rote Spektrallinie entspricht dem Übergang ${^1P_1} \longleftrightarrow {^1D_2}$, die Blaue Spektrallinie ${^3S_1} \longleftrightarrow {^3P_1}$. Die zugehörige Quantenzahlen und die mit Formel \ref{eqn:gj} berechneten Landé-Faktoren sind in Tabelle 
+
+\subsection{Die Quantenzahlen und die Landé-Faktoren von Cd-Atomen}
+
+Die rote Spektrallinie von der Cd-Lampe entspricht dem Übergang ${^1P_1} \longleftrightarrow {^1D_2}$, die blaue Spektrallinie 
+${^3S_1} \longleftrightarrow {^3P_1}$. Die zugehörige Quantenzahlen und die mit Formel \ref{eqn:gJ} berechneten Landé-Faktoren sind in Tabelle 
 \ref{tab:v2} zu sehen. 
 \FloatBarrier
 \begin{table}
@@ -15,18 +18,19 @@ Die rote Spektrallinie entspricht dem Übergang ${^1P_1} \longleftrightarrow {^1
        {Zustand} & {$L$}& {$S$} & {$J$} & {$g_{\si{j}}$}\\
       \midrule
       \midrule
-        {${^1P_1}$} & 1 & 0 \\ 
-        {${^1D_2}$} & 2 & 0 \\ 
-        {${^3S_1}$} & 0 & 1 \\ 
-        {${^3P_1}$} & 1 & 1 \\ 
+        {${^1P_1}$} & 1 & 0 & 1 & 1\\ 
+        {${^1D_2}$} & 2 & 0 & 2 & 1\\ 
+        {${^3S_1}$} & 0 & 1 & 1 & 2\\ 
+        {${^3P_1}$} & 1 & 1 & 1 & $\frac{3}{2}$\\ 
       \bottomrule
     \end{tabular}
 \end{table}
 \FloatBarrier
 
-
 \subsection{Dispersionsgebiet und spektrale Auflösung des Messapperatur}
-Mit Formel \ref{eqn:lD} und \ref{eqn:A} wird das Dispersionsgebiet $\lambda_{\si{D}}$ und das Auflösungsvermögen $A$ für die rote und die blaue Spektrallinie berechnet, was in Tabelle \ref{tab:v1} eingetragen ist. 
+Mit Formel \ref{eqn:lD} und \ref{eqn:A} wird das Dispersionsgebiet $\lambda_{\si{D}}$ und das 
+Auflösungsvermögen $A$ für die rote und die blaue Spektrallinie berechnet, was in Tabelle \ref{tab:v1} 
+eingetragen ist. 
 Die dafür benötigten Werte 
 \begin{align*}
   \lambda_{\si{rot}} &= \SI{643.8}{\nano\meter},\\
@@ -60,6 +64,34 @@ werden der Versuchsanleitung [1] entnommen.
 
 
 \subsection{Optimale Einstellung der Magnetfeldstärke}
+
+Die optimale Einstellung der Magnetfeldstärke berechnet sich durch die Formel 
+\begin{equation*}
+  B_{\si{optim}}= \frac{1}{4} \lambda_{\si{D}} \frac{h c}{\lambda² (m_i g_{Ji} - m_j g_{Jj}) \mu_B}.
+\end{equation*}
+Für die beiden Linien sind die optimalen Magnetfelder in Tabelle \ref{tab:A} zusammengefasst. Die rote 
+hat für $m_i g_{Ji} - m_j g_{Jj}$ immer nur den Wert 1, für die blaue Linie werden zwei verschiedne Übergänge 
+beobachtet, ein mal mit $m_i g_{Ji} - m_j g_{Jj} = 2$ und $m_i g_{Ji} - m_j g_{Jj} = \frac{1}{2}$.
+
+\begin{table}
+    \centering
+    \caption{Optimale Magentfelder.}
+    \label{tab:A}
+    \sisetup{table-format=1.2}
+    \begin{tabular}{c S[table-format=2.1] S[table-format=6.0] S S}
+      \toprule
+      %{$D$/cm}& \multicolumn{5}{c}{$U_{\symup{B}i} = \,\si{V}$}\\ überschrift über mehrere spalten
+      %\midrule
+       {Spektrallinie} & {$\lambda$}/nm &{$\lambda_{\si{D}}/\si{pm}$}& {$m_i g_{Ji} - m_j g_{Jj}$} & {$B_{\si{optim}}$/T}\\
+      \midrule
+      \midrule
+        rot  & 643,8  &  48,9 & 1   & 0,62\\
+        blau & 480    &  27,0 & 2   & 0,31\\
+        blau & 480    &  27,0 & 0,5 & 1,25\\
+      \bottomrule
+    \end{tabular}
+\end{table}
+\FloatBarrier
 
 
 
