@@ -71,8 +71,10 @@ Die optimale Einstellung der Magnetfeldstärke berechnet sich durch die Formel
   B_{\si{optim}}= \frac{1}{4} \lambda_{\si{D}} \frac{h c}{\lambda² (m_i g_{Ji} - m_j g_{Jj}) \mu_B}.
 \end{equation*}
 Für die beiden Linien sind die optimalen Magnetfelder in Tabelle \ref{tab:A} zusammengefasst. Die rote 
-hat für $m_i g_{Ji} - m_j g_{Jj}$ immer nur den Wert 1, für die blaue Linie werden zwei verschiedne Übergänge 
-beobachtet, ein mal mit $m_i g_{Ji} - m_j g_{Jj} = 2$ und $m_i g_{Ji} - m_j g_{Jj} = \frac{1}{2}$.
+hat für $m_i g_{Ji} - m_j g_{Jj}$ immer nur den Wert 1, für die blaue Linie werden zwei verschiedene Übergänge 
+beobachtet. Dabei verschmelzen aufgrund fehlerder Auflösung die Übergänge mit $m_i g_{Ji} - m_j g_{Jj} = 2$ 
+und $m_i g_{Ji} - m_j g_{Jj} = \frac{3}{2}$ zu einem, und es wird der Übergang mit $m_i g_{Ji} - m_j g_{Jj} = \frac{3}{2}$ 
+beobachtet.
 
 \begin{table}
     \centering
@@ -86,9 +88,11 @@ beobachtet, ein mal mit $m_i g_{Ji} - m_j g_{Jj} = 2$ und $m_i g_{Ji} - m_j g_{J
        {Spektrallinie} & {$\lambda$}/nm &{$\lambda_{\si{D}}/\si{pm}$}& {$m_i g_{Ji} - m_j g_{Jj}$} & {$B_{\si{optim}}$/T}\\
       \midrule
       \midrule
-        rot  & 643,8  &  48,9 & 1   & 0,62\\
-        blau & 480    &  27,0 & 2   & 0,31\\
-        blau & 480    &  27,0 & 0,5 & 1,25\\
+        rot                                        & 643,8  &  48,9 & 1   & 0,62\\
+        blau, beobachtet1                          & 480    &  27,0 & 0,5 & 1,25\\
+        blau, a                                    & 480    &  27,0 & 2   & 0,31\\
+        blau, b                                    & 480    &  27,0 & 1,5 & 0,42\\
+        blau, beobachtet1(Mischung aus a und b)    & 480    &  27,0 & 1,75& 0,37\\
       \bottomrule
     \end{tabular}
 \end{table}

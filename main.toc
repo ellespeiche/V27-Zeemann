@@ -10,7 +10,7 @@
 \contentsline {subsection}{\numberline {2.3}Aufspaltung im Magnetfeld}{5}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Die optischen Übergänge}{6}{subsection.2.4}
 \contentsline {subsubsection}{\numberline {2.4.1}Der normale Zeeman-Effekt}{6}{subsubsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.2}Der annormale Zeeman-Effekt}{7}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.2}Der anomale Zeeman-Effekt}{7}{subsubsection.2.4.2}
 \contentsline {section}{\numberline {3}Aufbau}{8}{section.3}
 \contentsline {section}{\numberline {4}Durchführung}{9}{section.4}
 \contentsline {section}{\numberline {5}Vorbereitende Aufgaben}{10}{section.5}
